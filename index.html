@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="scripts/controller.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FilmSociety</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__heading">
+          Film<span class="blue-letter">S</span>ociety
+        </h1>
+        <h2 class="heading-primary">
+          <b>Escape</b> reality with native <b>satisfaction</b>
+        </h2>
+        <div class="header__button_wrapper mt-small">
+          <button class="btn btn--blue">Explore</button>
+          <button class="btn btn--gray" id="search">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__catalog">
+      <div class="container">
+        <form>
+          <input type="text" placeholder="Search Movie/Series by title" />
+          <button id="searchMovie">
+            <svg>
+              <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <!--Content-->
+
+        <div class="section__catalog__wrapper mt-huge">
+          <h2 class="heading-primary heading-primary--darken mb-small">
+            Search Results for:
+          </h2>
+
+          <div class="section__catalog__wrapper__grid">
+            <!--
+
+          
+            <div class="section__catalog__grid__item">
+              <div class="overlay">
+                <div class="abs">
+                  <div class="section__catalog__grid__item__movie-info">
+                    <h3 class="section__catalog__grid__item__title">
+                      Spiderman
+                    </h3>
+                    <p class="section__catalog__grid__item__year">2007</p>
+                  </div>
+                  <button id="viewMovie">View More</button>
+                </div>
+              </div>
+              <img src="./assets/demo.jpg" />
+            </div>
+
+             -->
+          </div>
+          <div class="section__catalog__button-wrapper mt-big">
+            <button id="previousPage">&#8592;</button>
+            <button id="nextPage">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="movie__overlay">
+      <div class="movie__wrap">
+        <!--
+        <button id="closeOverlay">X</button>
+        <img src="/assets/demo.jpg" alt="" id="moviePoster" />
+        <h2 class="heading-primary">Spider-Man: Homecoming</h2>
+        <div class="movie__rating__wrap">
+          <div class="movie__rating">
+            <img src="/SVG/star-svgrepo-com.svg" alt="rating star" id="svg" />
+            <span>7.4</span>
+          </div>
+          <span class="movie__duration">133 min</span>
+          <span class="movie__genres">Action, Adventure, Sci-Fi</span>
+          <span class="movie__date">2017</span>
+        </div>
+        <span class="movie__desc"
+          >Peter Parker balances his life as an ordinary high school student in
+          Queens with his superhero alter-ego Spider-Man, and finds himself on
+          the trail of a new menace prowling the skies of New York City.
+        </span>
+        <span class="movie__writer"
+          ><img src="SVG/pen-svgrepo-com.svg" id="svg" />Writers: Jonathan
+          Goldstein, John Francis Daley, Jon Watts</span
+        >
+        <span class="movie__cast">
+          <img src="/SVG/person-svgrepo-com.svg" alt="" id="svg" />Cast: Tom H
+          anks, Liv Tyler, Charlize Theron
+        </span>
+
+        <span class="movie__ratings"
+          ><img src="SVG/star-svgrepo-com.svg" alt="" id="svg" />Ratings:
+          Internet Movie Database:71/100</span
+        >
+         -->
+      </div>
+    </div>
+  </body>
+</html>

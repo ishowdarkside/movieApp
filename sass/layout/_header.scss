@@ -1,0 +1,25 @@
+.header {
+  background-image: linear-gradient(to top, rgba(#000, 1), rgba(#000, 0.3)),
+    url("../../assets/header-bg.jpg");
+  padding: 30rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__heading {
+    font-family: $mont;
+    font-weight: 300;
+    font-size: 7.5rem;
+    line-height: 1.2;
+    color: #f3f3f3;
+
+    @include responsive-custom(23.43em) {
+      font-size: 6rem;
+    }
+  }
+
+  &__button_wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+}

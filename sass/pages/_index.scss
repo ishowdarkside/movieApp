@@ -1,0 +1,124 @@
+.section__catalog {
+  min-height: 100dvh;
+  padding: 20rem 0;
+  form {
+    display: flex;
+    input {
+      width: 100%;
+      padding: 1rem;
+      outline: none;
+      border: 1px solid $color-blue;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      &::placeholder {
+        color: $color-blue;
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 1rem;
+      border: none;
+      outline: none;
+      background-color: $color-blue;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: darken($color-blue, 15%);
+      }
+      svg {
+        fill: #fff;
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  &__wrapper {
+    opacity: 0;
+  }
+  &__wrapper__grid {
+    display: grid;
+    min-height: 80rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 21rem));
+
+    justify-content: center;
+    @include responsive-custom(31.25em) {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+      justify-content: space-evenly;
+    }
+    gap: 3rem;
+  }
+
+  &__grid__item {
+    height: 40dvh;
+    border-radius: 1rem;
+
+    position: relative;
+    &:hover .overlay {
+      opacity: 1;
+    }
+    &__movie-info {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    img {
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #viewMovie {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      border: none;
+      outline: none;
+      background-color: $color-blue;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: darken($color-blue, 15%);
+      }
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    p {
+      color: #1f8eff;
+    }
+  }
+
+  .abs {
+    padding: 2rem;
+    position: absolute;
+
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    button {
+      padding: 1rem;
+      border: none;
+      outline: none;
+      color: #fff;
+      background-color: $color-blue;
+      border-radius: 50%;
+      font-size: 1.9rem;
+      cursor: pointer;
+    }
+  }
+}
